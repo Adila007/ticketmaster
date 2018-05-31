@@ -2,6 +2,7 @@ package ticketmaster.step_definitions;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import cucumber.api.java.en.Given;
@@ -27,7 +28,7 @@ public class Login {
 	@Given("^I log in with valid credentials$")
 	public void i_log_in_with_valid_credentials() {
 		System.out.println("This is Given in Login class");
-	   //Assert.fail();
+	   Assert.fail();
 	}
 
 	@Then("^I should able to see log in$")
