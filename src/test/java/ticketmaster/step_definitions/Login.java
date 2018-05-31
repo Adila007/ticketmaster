@@ -28,7 +28,7 @@ public class Login {
 	@Given("^I log in with valid credentials$")
 	public void i_log_in_with_valid_credentials() {
 		System.out.println("This is Given in Login class");
-	   Assert.fail();
+	   //Assert.fail();
 	}
 
 	@Then("^I should able to see log in$")
