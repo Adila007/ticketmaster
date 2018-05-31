@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">I go to ticketmaster (PASSED : 3s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I log in with valid credentials (FAILED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I should able to see log in (SKIPPED)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="TicketMaster" duration-ms="6299" started-at="2018-05-31T20:27:47Z" finished-at="2018-05-31T20:27:54Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:ticketmaster.runners.CukesRunner@185d8b6]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Login" duration-ms="6299" started-at="2018-05-31T20:27:47Z" finished-at="2018-05-31T20:27:54Z">
+      <class name="ticketmaster.runners.CukesRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:ticketmaster.runners.CukesRunner@185d8b6]" name="setUpClass" is-config="true" duration-ms="181" started-at="2018-05-31T20:27:47Z" finished-at="2018-05-31T20:27:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:ticketmaster.runners.CukesRunner@185d8b6]" name="runScenario" duration-ms="6028" started-at="2018-05-31T20:27:48Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-05-31T20:27:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login to ticketmaster"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at ticketmaster.step_definitions.Login.i_log_in_with_valid_credentials(Login.java:32)
+at ✽.I log in with valid credentials(src/test/resources/ticketmaster.features/login.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I go to ticketmaster (PASSED : 3s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I log in with valid credentials (FAILED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I should able to see log in (SKIPPED)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:ticketmaster.runners.CukesRunner@185d8b6]" name="tearDownClass" is-config="true" duration-ms="33" started-at="2018-05-31T20:27:54Z" finished-at="2018-05-31T20:27:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- ticketmaster.runners.CukesRunner -->
+    </test> <!-- Login -->
+  </suite> <!-- TicketMaster -->
+</testng-results>

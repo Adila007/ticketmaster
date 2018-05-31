@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Failed suite [TicketMaster]">
+  <test thread-count="5" verbose="2" name="Login(failed)">
+    <classes>
+      <class name="ticketmaster.runners.CukesRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- ticketmaster.runners.CukesRunner -->
+    </classes>
+  </test> <!-- Login(failed) -->
+</suite> <!-- Failed suite [TicketMaster] -->
