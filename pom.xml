@@ -31,6 +31,13 @@
 			<artifactId>cucumber-sandwich</artifactId>
 			<version>3.15.0</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentsreports -->
+		<dependency>
+		           <groupId>com.relevantcodes</groupId>
+		           <artifactId>extentreports</artifactId>
+		           <version>2.41.2</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>

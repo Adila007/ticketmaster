@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-TicketMaster">
-              <span class="suite-name border-failed">TicketMaster</span>
+              <span class="suite-name border-passed">TicketMaster</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-TicketMaster" class="hide-methods failed suite-TicketMaster"> (hide)</a> <!-- hide-methods failed suite-TicketMaster -->
-                      <a href="#" panel-name="suite-TicketMaster" class="show-methods failed suite-TicketMaster"> (show)</a> <!-- show-methods failed suite-TicketMaster -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TicketMaster" class="hide-methods passed suite-TicketMaster"> (hide)</a> <!-- hide-methods passed suite-TicketMaster -->
+                      <a href="#" panel-name="suite-TicketMaster" class="show-methods passed suite-TicketMaster"> (show)</a> <!-- show-methods passed suite-TicketMaster -->
                     </span>
-                    <div class="method-list-content failed suite-TicketMaster">
+                    <div class="method-list-content passed suite-TicketMaster">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TicketMaster" title="ticketmaster.runners.CukesRunner" hash-for-method="runScenario(&quot;Login to ticketmaster&quot;, &quot;Login&quot;)">runScenario("Login to ticketmaster", "Login")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-TicketMaster -->
+                    </div> <!-- method-list-content passed suite-TicketMaster -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TicketMaster" class="panel TicketMaster">
-          <div class="suite-TicketMaster-class-failed">
+          <div class="suite-TicketMaster-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">ticketmaster.runners.CukesRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -129,19 +129,12 @@
                   </a> <!-- runScenario("Login to ticketmaster", "Login") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Login to ticketmaster", "Login")</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.fail(Assert.java:103)
-	at ticketmaster.step_definitions.Login.i_log_in_with_valid_credentials(Login.java:32)
-	at ✽.I log in with valid credentials(src/test/resources/ticketmaster.features/login.feature:6)
-
-</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TicketMaster-class-failed -->
+          </div> <!-- suite-TicketMaster-class-passed -->
         </div> <!-- panel TicketMaster -->
         <div panel-name="test-xml-TicketMaster" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -152,6 +145,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite verbose=&quot;2&quot; name=&quot;TicketMaster&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;ticketmaster.extentReportListener.ExtentReport&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Login&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;ticketmaster.runners.CukesRunner&quot;/&gt;
@@ -206,12 +202,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'ticketmaster.runners.CukesRunner')
-data.setCell(0, 3, 6028);
+data.setCell(0, 3, 11530);
 window.suiteTableData['TicketMaster']= { tableData: data, tableDiv: 'times-div-TicketMaster'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-TicketMaster">
               </div> <!-- times-div-TicketMaster -->
             </div> <!-- times-div -->
@@ -225,9 +221,9 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">runScenario("Login to ticketmaster", "Login")</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><div "result">I go to ticketmaster (PASSED : 3s)</div></span>
-                <span class="reporter-method-output"><div "result">I log in with valid credentials (FAILED : 0s)</div></span>
-                <span class="reporter-method-output"><div "result">I should able to see log in (SKIPPED)</div></span>
+                <span class="reporter-method-output"><div "result">I go to ticketmaster (PASSED : 4s)</div></span>
+                <span class="reporter-method-output"><div "result">I log in with valid credentials (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I should able to see log in (PASSED : 4s)</div></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -251,14 +247,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runScenario("Login to ticketmaster", "Login")</span>
-                <span class="method-start">227 ms</span>
+                <span class="method-start">276 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">6257 ms</span>
+                <span class="method-start">11808 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,5 +1,10 @@
 <suite name="TicketMaster" verbose="2">
 
+<listeners>
+<listener class-name="ticketmaster.extentReportListener.ExtentReport"/>
+</listeners>
+
+
 	<test name="Login">
 		<classes>
 			<class name ="ticketmaster.runners.CukesRunner"></class>
